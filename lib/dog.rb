@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 require "pry"
 
 class Dog
@@ -113,3 +114,16 @@ class Dog
 
 
   end
+=======
+class Dog
+  attr_accessor :name, :breed, :id
+  attr_reader 
+  
+  def initialize(attributes)
+    attributes.each do |key, value|
+      self.send("#{key}=", value)
+    end
+  end
+end
+
+>>>>>>> f748b5d002a016ae096f27030df2e2211ff32c04
